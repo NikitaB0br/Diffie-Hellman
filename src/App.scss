@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.diffieHellman {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+
+  h1 {
+    font-size: 2em;
+    color: rgb(30,144,255);
+    margin-bottom: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .values {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+
+    p {
+      margin: 8px 0;
+      font-weight: 600;
+    }
+
+    strong {
+      color: rgb(30,144,255);
+    }
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: rgb(30,144,255);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(30,144,255);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
